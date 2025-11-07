@@ -774,7 +774,6 @@ ul {
 
 /* footer css start here */
 
-/* footer start here */
 .newsletter {
     background-color: var(--white-color);
     text-align: center;
@@ -1042,6 +1041,17 @@ footer {
 
 .footer-bottom {
     padding-bottom: 15px;
+}
+.locations {
+    text-align: center;
+}
+
+.footer-company-links li {
+    padding: 10px 0 !important;
+}
+
+.last-accordion{
+    border-bottom: 1px solid var(--gray-color);
 }
 
 /* hom page css start here */
@@ -1618,7 +1628,7 @@ footer {
     }
 
     .footer-accordion {
-        border-top: 2px solid var(--gray-color);
+        border-top: 1px solid var(--gray-color);
     }
 
     .footer-mobile-box {

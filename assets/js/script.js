@@ -11,6 +11,14 @@ $(".close-mega-menu").click(function () {
     $(this).closest('.mega-menu-wrapper').find('.show-mega-menu').removeClass('show-mega-menu');
 })
 
+$('.footer-accordion-header').click(function () {
+        $(this).toggleClass('active');
+        $(this).next('.footer-accordion-content').slideToggle(200);
+
+        $(this).find('.arrow-icon').toggleClass('rotate');
+    });
+
+
 $('.arrival-slider').owlCarousel({
     loop: true,
     margin: 10,

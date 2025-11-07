@@ -1,0 +1,46 @@
+/* ---------------------------about section ------------------------- */
+.About-banner {
+  position: relative;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; /* optional */
+  z-index: 2;
+}
+.About-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--Black---1, #111);
+  opacity: 0.6;
+  z-index: 1;
+}
+.testimonial{
+    background-color: #111;
+    color: #fff;
+    padding: 40px 0;
+}
+.testimonial .fearured-title{
+    padding: 25px 0;
+    color: #fff;
+}
+.testimonial .fearured-title span{
+    color: #009899;
+}
+.testimonial .testimonial-box{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.testimonial .testimonial-box .testimonial-content{
+    text-align: center;
+}
+/* ---------------------------about section ------------------------- */

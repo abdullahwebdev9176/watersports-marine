@@ -65,6 +65,35 @@ ul {
     margin-bottom: 0;
 }
 
+.theme-filled-btn {
+    color: var(--white-color);
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    background: var(--aqua-color);
+    border: 1px solid var(--aqua-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 37px;
+    text-decoration: none;
+    transition: all 0.5s;
+    min-width: 160px;
+    min-height: 40px;
+    flex-shrink: 0;
+    transform: skew(-10deg);
+}
+
+.theme-filled-btn:hover {
+    background: var(--aqua-color);
+    border: 1px solid var(--aqua-color);
+    color: var(--white-color);
+}
+
 .theme-outline-btn {
     color: var(--white-color);
     font-family: "Bai Jamjuree";

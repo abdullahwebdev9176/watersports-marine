@@ -1,39 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-@font-face {
-    font-family: 'Urbane-Bold';
-    src: url('/assets/fonts/urbane/Urbane-Bold.ttf');
-}
-
-@font-face {
-    font-family: 'Urbane-ExtraLight';
-    src: url('/assets/fonts/urbane/Urbane-ExtraLight.ttf');
-}
-
-@font-face {
-    font-family: 'Urbane-Light';
-    src: url('/assets/fonts/urbane/Urbane-Light.ttf');
-}
-
-@font-face {
-    font-family: 'Urbane-Medium';
-    src: url('/assets/fonts/urbane/Urbane-Medium.ttf');
-}
-
-@font-face {
-    font-family: 'Urbane-Thin';
-    src: url('/assets/fonts/urbane/Urbane-Thin.ttf');
-}
-
-@font-face {
-    font-family: 'Urbane-Semibold';
-    src: url('/assets/fonts/urbane/Urbane-DemiBold.ttf');
-}
-
-@font-face {
-    font-family: 'Urbane-ExtraBold';
-    src: url('/assets/fonts/urbane/Urbane-Heavy.ttf');
-}
 
 * {
     margin: 0;
@@ -42,8 +8,8 @@
 }
 
 :root {
-    --gold-color: #AE8D32;
-    --black-color: #000;
+    --black-color: #111;
+    --aqua-color: #009899;
     --white-color: #FFF;
 }
 
@@ -90,6 +56,8 @@ a:hover {
 
 p {
     margin-bottom: 0;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
 }
 
 ul {
@@ -185,8 +153,8 @@ ul {
 /* header-start here */
 
 .header-container {
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 120px;
+    padding-left: 120px;
 }
 
 .header-box {
@@ -194,31 +162,33 @@ ul {
 }
 
 .logo-box {
-    width: 30%;
+    width: 20%;
+    padding: 20px 0;
 }
 
 .right-nav-box {
-    width: 20%;
+    width: 15%;
 }
 
 .centaral-nav-box {
-    width: 50%;
+    width: 65%;
 }
 
 .desktop-header .centaral-nav-link,
 .desktop-header .left-nav-link {
-    font-family: 'Urbane-Medium';
+    color: var(--white-color);
+    font-family: "Bai Jamjuree";
     font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
     letter-spacing: 0.8px;
     text-transform: uppercase;
 }
 
 .desktop-header .centaral-nav-link {
-    padding: 7px 17px;
-    color: var(--black-color);
+    padding: 0 17px;
+    color: var(--white-color);
 }
 
 .desktop-header li {
@@ -230,8 +200,8 @@ ul {
 }
 
 .desktop-header {
-    background: var(--white-color);
-    padding: 20px 0;
+    background: var(--black-color);
+    padding: 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -243,10 +213,15 @@ ul {
 
 .centaral-nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     margin-bottom: 0;
     height: 100%;
+}
+
+.centaral-nav ul li {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .dropdown-link {
@@ -258,7 +233,7 @@ ul {
 
 .header-logo {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100%;
     max-width: 320px;
@@ -276,7 +251,7 @@ ul {
 
 .right-nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     height: 100%;
     margin-bottom: 0;
@@ -297,15 +272,12 @@ ul {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid var(--black-color);
 }
 
 .header-search span {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: var(--white-color);
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .header-search input {
@@ -334,15 +306,31 @@ ul {
 
 .header-location-box {
     cursor: pointer;
+    text-align: right;
 }
 
 
-.location-dropdown h6 {
+.header-location-box h6 {
+    color: var(--white-color);
     margin-bottom: 0;
+    text-align: right;
+    font-family: "Bai Jamjuree";
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration-line: underline;
 }
 
-.location-dropdown span.fa {
-    font-size: 23px;
+.header-location-box p a {
+    color: var(--aqua-color);
+    font-family: "Bai Jamjuree";
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .header-resources-box {
@@ -366,41 +354,77 @@ ul {
 }
 
 /* mega menus start here */
+.mega-menu-wrapper {
+    position: relative;
+    background: var(--white-color);
+    box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.30);
+}
+
+.close-mega-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 22px;
+    right: 23px;
+    color: var(--black-color);
+    opacity: 0.5;
+}
+
+.close-mega-menu span {
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 5px;
+}
 
 .mega-menu-box {
-    background: var(--black-color);
-    padding: 80px 15px;
-    max-width: calc(100% - 35%);
+    padding: 40px 15px 65px 15px;
+    max-width: calc(100% - 25%);
     margin: 0 auto;
     display: none;
 }
 
 .mega-menu-col-1 h6 {
-    color: rgba(255, 255, 255, 0.40);
-    font-family: Oswald-Bold;
-    font-size: 14px;
-    font-style: normal;
+    color: var(--aqua-color);
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: italic;
     font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.4px;
+    line-height: 24px;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .mega-menu-col-1 ul li>a {
-    color: #FFF;
-    font-family: "Acumin-light";
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 24px;
+    margin-bottom: 16px;
     display: block;
-    margin-bottom: 20px;
+}
+
+.mega-menu-col-1 .top-list-box {
+    margin-bottom: 56px;
+}
+
+.menu-card {
+    position: relative;
+    margin-bottom: 8px;
 }
 
 .mega-boats-box {
     display: flex;
-    /* justify-content: space-between; */
+    flex-wrap: wrap;
 }
 
 .mega-menu-container {
@@ -408,34 +432,39 @@ ul {
 }
 
 .mega-menu-col-1 {
-    width: 23%;
+    width: 42%;
+    display: flex;
 }
 
 .mega-menu-col-2 {
-    width: 77%;
+    width: 58%;
+}
+
+.mega-menuinner-col {
+    width: 50%;
 }
 
 .mega-menu-col-2 h5 {
-    color: rgba(255, 255, 255, 0.40);
-    font-family: 'Oswald-Bold';
-    font-size: 14px;
-    font-style: normal;
+    color: var(--aqua-color);
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: italic;
     font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.4px;
+    line-height: 24px;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     padding-left: 7.5px;
 }
 
 .mega-boats-col {
     width: calc(100% / 3);
-    padding: 0 7.5px;
+    padding: 0 4px;
 }
 
 .menu-card-img {
     position: relative;
-    padding-top: 50%;
+    padding-top: 56%;
 }
 
 .menu-card-logo {
@@ -462,6 +491,14 @@ ul {
     object-fit: cover;
 }
 
+.menu-card-title {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
 .menu-card-title h6 {
     color: #FFF;
     font-family: Oswald-Regular;
@@ -471,7 +508,49 @@ ul {
     line-height: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin: 10px 0 10px 0;
+    margin-bottom: 0;
+}
+
+.service-mega-menu {
+    display: flex;
+    width: calc(100% - 30%);
+    margin: 0 auto;
+}
+
+.service-dropdown-card {
+    width: calc(100% / 3);
+    padding: 0 4px;
+    display: block;
+}
+
+.service-mega-menu-img {
+    position: relative;
+    padding-top: 56%;
+}
+
+.service-mega-menu-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-mega-menu-title {
+    margin-top: 8px;
+}
+
+.service-mega-menu-title h6 {
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /* dropdown start here */
@@ -506,7 +585,7 @@ ul {
     margin-bottom: 20px;
 }
 
-.doss-dropdown.show-dropdown {
+.doss-dropdown.show-mega-menu {
     display: block !important;
 }
 
@@ -844,4 +923,3 @@ footer {
     color: var(--white-color);
     text-align: left;
 }
-

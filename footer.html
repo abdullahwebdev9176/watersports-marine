@@ -26,99 +26,220 @@
     <!-- footer start here -->
 
     <footer>
-        <div class="footer-container">
-            <div class="footer-main-box">
-                <div class="footer-main-col-1">
-                    <div class="footer-logo-box">
-                        <div class="mb-30">
-                            <a href="/">
-                                <img src="./assets/images/site-logo/white-singleton-logo.webp" alt="Singleton Marine">
-                            </a>
-                        </div>
-
-                        <div class="footer-address-box">
-                            <p>9 Locations to Serve You</p>
-                            <p><a id="footer-contact-button" href="javascript:void(0)">Contact Us</a></p>
-                        </div>
-
-                        <div class="social-icons-box">
-
-                            <p>Find us on Social</p>
-
-                            <ul>
-                                <li><a href="javascript:void(0)"><span class="fa fa-facebook"></span></a></li>
-                                <li><a href="javascript:void(0)"><span class="fa fa-instagram"></span></a></li>
-                                <li><a href="javascript:void(0)"><span class="fa fa-youtube"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-main-col-2">
-                    <div class="mutlti-column-box">
-                        <div class="mutlti-column-1">
-                            <h6>SALES</h6>
-                            <ul>
-                                <li><a id="footer-new-boats" href="javascript:void(0)">New Boats</a></li>
-                                <li><a id="footer-used-boats" href="javascript:void(0)">Pre-Owned Boats</a></li>
-                                <li><a id="footer-trailers" href="javascript:void(0)">Get Financing</a></li>
-                                <li><a id="footer-trailers" href="javascript:void(0)">Sell/Trade Your Boat</a></li>
-                                <li><a id="footer-trailers" href="javascript:void(0)">Outboard Engines</a></li>
-                                <li><a id="footer-trailers" href="javascript:void(0)">Pro Shop</a></li>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="mutlti-column-1">
-                            <h6>Services</h6>
-                            <ul>
-                                <li><a id="footer-service-department"
-                                        href="/chapin-sc-boat-maintenance-service-repair-parts">Service Center</a>
-                                </li>
-                                <li><a id="footer-suzuki-repower" href="/suzuki-outboard-repower-services">Repower</a>
-                                </li>
-                                <li><a id="footer-winterization" href="/winterization">Marina & Storage</a></li>
-                                <li><a id="footer-upholstery-repair" href="/upholstery-repair">Parts & Accessories</a>
-                                </li>
-
-                            </ul>
-                        </div>
-
-                        <div class="mutlti-column-1">
-                            <h6>RESOURCES</h6>
-                            <ul>
-                                <li><a id="footer-suzuki-extended" href="javascript:void(0)">About Us</a></li>
-                                <li><a id="footer-oil-capacity-filter-chart"
-                                        href="javascript:void(0)">Events & Promotions</a>
-                                </li>
-                                <li><a id="footer-Testimonials" href="javascript:void(0)">Testimonials</a></li>
-                                <li><a id="footer-staff" href="javascript:void(0)">Meet the Crew</a></li>
-                                <li><a id="footer-team" href="javascript:void(0)">Join Our Team</a></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
+        <!-- Newsletter Section -->
+        <div class="newsletter">
+            <h2>ENTER OUR WORLD</h2>
+            <p>Our Newsletter informs of promotions, events, MADIS MARINE news, and more.</p>
+            <div class="newsletter-form gtm_form" data-form-id="Newsletter Form">
+                <input type="email" id="subscriber-email" placeholder="Enter your email address" required="">
+                <button type="submit" onclick="subscribeNewsletter()" class="gtm_form_submit"
+                    data-form-id="Newsletter Form">→</button>
+            </div>
+            <div class="social-icons">
+                <a href="javascript:void(0)"><i class="fa fa-instagram"></i></a>
+                <a href="javascript:void(0)"><i class="fa fa-facebook-f"></i></a>
+                <a href="javascript:void(0)"><i class="fa fa-youtube"></i></a>
+                <a href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
             </div>
         </div>
 
-        <div class="footer-bottom">
-            <ul>
-                <li><a href="javascript:void(0)"></a>Copyright 2025 </li>
-                <li><a id="footer-mds-brand-button" href="https://mdsbrand.com/" target="_blank">Powered by MDS
-                        Brand </a></li>
-                <li><a id="footer-privacy-policy" href="/privacypolicy">Privacy Policy </a></li>
-            </ul>
+        <!-- Main Footer -->
+        <div class="footer-box">
+            <div class="footer-grid">
+                <div class="footer-col-1">
+                    <div class="footer-column">
+                        <h4>SALES</h4>
+                        <ul>
+                            <li class="arrow-link"><a href="/boats-for-sale">All Boats<span>↓</span></a></li>
+                            <li class="arrow-link"><a href="/bew-boats-for-sale">New Boats <span>↓</span></a></li>
+                            <li class="arrow-link"><a href="/used-pre-owned-boats-for-sale">Pre-Owned <span>↓</span></a>
+                            </li>
+                            <li class="arrow-link"><a href="/service">Service Your Boat <span>↓</span></a></li>
+                            <li><a href="/financing">Financing</a></li>
+                            <li><a href="/value-trade">Trade / Sell Your Boat</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>BRANDS</h4>
+                        <ul>
+                            <li class="arrow-link"><a href="javascript:void(0)">Centurion <span>↓</span></a></li>
+                            <li class="arrow-link"><a href="/boats-for-sale?brand=MasterCraft">MasterCraft
+                                    <span>↓</span></a></li>
+                            <li class="arrow-link"><a href="javascript:void(0)">Supreme <span>↓</span></a></li>
+                            <li class="arrow-link"><a href="javascript:void(0)">Bennington <span>↓</span></a></li>
+                            <li class="arrow-link"><a href="javascript:void(0)">Scout <span>↓</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>COMPANY</h4>
+                        <ul class="company-links">
+                            <li><a href="/proshop">Pro Shop</a></li>
+                            <li><a href="/events">Events</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/blog">Articles</a></li>
+                            <li><a href="/contact#cali_contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
 
-            <div class="recaptcha-div text-center">
+                <div class="footer-mobile-box">
 
-                <p style="font-size: 12px; color: #666; text-align: center; margin-top: 10px; padding: 5px 0;">
-                    This site is protected by reCAPTCHA and the Google
-                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer"
-                        style="color: blue;">Privacy Policy</a> and
-                    <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer"
-                        style="color: blue;">Terms of Service</a> apply.
-                </p>
+                    <div class="footer-accordion">
+                        <div class="footer-accordion-header">
+                            <span>Sales</span>
+                            <span class="arrow-icon">↓</span>
+                        </div>
+
+                        <div class="footer-accordion-content">
+                            <ul>
+                                <li><a href="/boats-for-sale">All Boats</a></li>
+                                <li><a href="/new-boats-for-sale">New Boats</a></li>
+                                <li><a href="/used-pre-owned-boats-for-sale">Pre-Owned</a></li>
+                                <li><a href="/service">Service Your Boat</a></li>
+                                <li><a href="/financing">Financing</a></li>
+                                <li><a href="/value-trade">Trade / Sell Your Boat</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="footer-accordion">
+                        <div class="footer-accordion-header">
+                            <span>Brands</span>
+                            <span class="arrow-icon">↓</span>
+                        </div>
+
+                        <div class="footer-accordion-content">
+                            <ul>
+                                <li>
+                                    <div class="menu-logo-box">
+
+                                        <div class="menu-logo">
+                                            <a href="javascript:void(0)">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/logos/mobile-menu-logo-1.png"
+                                                    alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="menu-logo">
+                                            <a href="javascript:void(0)">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/logos/mobile-menu-logo-2.png"
+                                                    alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="menu-logo">
+                                            <a href="javascript:void(0)">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/logos/mobile-menu-logo-3.png"
+                                                    alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="menu-logo">
+                                            <a href="javascript:void(0)">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/logos/mobile-menu-logo-4.png"
+                                                    alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="menu-logo">
+                                            <a href="javascript:void(0)">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/logos/mobile-menu-logo-5.png"
+                                                    alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="menu-logo">
+                                            <a href="/boats-for-sale?brand=Mastercraft">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/logos/mobile-menu-logo-6.png"
+                                                    alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="menu-logo">
+                                            <a href="/boats-for-sale?brand=Regal">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/logos/mobile-menu-logo-7.png"
+                                                    alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="menu-logo">
+                                            <a href="javascript:void(0)">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/logos/mobile-menu-logo-8.png"
+                                                    alt="">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="footer-accordion">
+                        <div class="footer-accordion-header">
+                            <span>Company</span>
+                            <span class="arrow-icon">↓</span>
+                        </div>
+
+                        <div class="footer-accordion-content">
+                            <ul>
+                                <li><a href="/about">About us</a></li>
+                                <li><a href="/careers">Crew/Careers</a></li>
+                                <li><a href="/contact#cali_contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="footer-col-2 company-info">
+                    <div class="footer-logo">
+                        <img src="https://cdn.mdsbrand.com/madis/assets/images/footer-logo.png" alt="MADIS MARINE">
+                    </div>
+                    <div class="locations">
+                        <p class="madis-locations-heading">LOCATIONS</p>
+                        <ul>
+                            <li>Sarasota</li>
+                            <li>Tampa Bay</li>
+                            <li>Ft. Myers Beach</li>
+                            <li>Naples Marina</li>
+                        </ul>
+                        <p class="madis-locations-heading">OR</p>
+                        <p class="address">123456 Streetname<br>Cityname, ST 12345</p>
+                        <p class="phone">123.456.7890</p>
+                    </div>
+                </div>
+
             </div>
+        </div>
+
+        <hr>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <ul>
+                    <li class="bottom-links"><a href="javascript:void(0)"></a>Copyright 2025 </li>
+                    <li class="bottom-links"><a id="footer-mds-brand-button" href="https://mdsbrand.com/"
+                            target="_blank">Powered by MDS Brand&nbsp;</a></li>
+                    <li class="bottom-links"><a id="footer-privacy-policy" href="/sitemap.xml">Sitemap&nbsp;</a></li>
+                </ul>
+            </div>
+
+            <p class="recaptcha-disclaimer">
+                This site is protected by reCAPTCHA and the Google
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy
+                    Policy</a> and
+                <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of
+                    Service</a>
+                apply.
+            </p>
+
         </div>
     </footer>
 

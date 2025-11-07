@@ -11,6 +11,7 @@
     --black-color: #111;
     --aqua-color: #009899;
     --white-color: #FFF;
+    --gray-color: #D9D9D9;
 }
 
 /* Common css start here  */
@@ -64,60 +65,62 @@ ul {
     margin-bottom: 0;
 }
 
-.white-to-gold-btn {
-    color: var(--black-color);
-    text-align: center;
-    font-family: "Zilla Slab";
+.theme-outline-btn {
+    color: var(--white-color);
+    font-family: "Bai Jamjuree";
     font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
+    font-style: italic;
+    font-weight: 700;
     line-height: 24px;
-    background: var(--white-color);
-    border: 1px solid var(--white-color);
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid var(--aqua-color);
     display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: 12px 37px;
     text-decoration: none;
     transition: all 0.5s;
-    text-transform: capitalize;
     min-width: 160px;
     min-height: 40px;
     flex-shrink: 0;
+    transform: skew(-10deg);
 }
 
-.white-to-gold-btn:hover {
-    background: var(--gold-color);
-    border: 1px solid var(--gold-color);
+.theme-outline-btn:hover {
+    background: var(--aqua-color);
+    border: 1px solid var(--aqua-color);
     color: var(--white-color);
 }
 
-.black-to-gold-btn {
-    color: var(--white-color);
-    text-align: center;
-    font-family: "Zilla Slab";
+.theme-btn {
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
     font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
+    font-style: italic;
+    font-weight: 700;
     line-height: 24px;
-    background: var(--black-color);
-    border: 1px solid var(--black-color);
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid var(--aqua-color);
     display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: 12px 37px;
     text-decoration: none;
     transition: all 0.5s;
-    text-transform: capitalize;
     min-width: 160px;
     min-height: 40px;
     flex-shrink: 0;
+    transform: skew(-10deg);
 }
 
-.black-to-gold-btn:hover {
-    background: var(--gold-color);
-    color: var(--black-color);
-    border: 1px solid var(--gold-color);
+.theme-btn:hover {
+    background: var(--aqua-color);
+    border: 1px solid var(--aqua-color);
+    color: var(--white-color);
 }
 
 .rich-text {
@@ -127,6 +130,40 @@ ul {
     font-weight: 300;
     line-height: 24px;
     margin: 0;
+}
+
+.section-title {
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.fearured-title {
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.fearured-lg-title {
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
 }
 
 .title-heading {
@@ -864,8 +901,7 @@ footer {
 
 .home-banner {
     position: relative;
-    padding-top: 50%;
-    min-height: 300px;
+    padding-top: 42%;
 }
 
 .home-banner video {
@@ -898,28 +934,648 @@ footer {
 }
 
 .home-banner-btn {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 16px;
+    position: absolute;
+    bottom: 123px;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
 .home-banner-content {
     position: absolute;
-    bottom: 120px;
-    left: 0;
+    top: 50%;
+    left: 50%;
     width: 100%;
     text-align: center;
     padding: 0 15px;
-    padding-left: 200px;
+    transform: translate(-50%, -50%);
 }
 
 .banner-title {
-    font-family: "Zilla Slab";
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 72px;
     color: var(--white-color);
-    text-align: left;
+    font-family: "Bai Jamjuree";
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.banner-subtitle {
+    color: var(--white-color);
+    font-family: "Bai Jamjuree";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.brand-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.brand-items {
+    list-style: none;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    height: 100px;
+    background-color: black;
+}
+
+.brand-items a img {
+    padding: 17px 20px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.brand-sec {
+    padding: 80px 0;
+}
+
+.arrival-slider .home-inventory-cards .inventory-card-img {
+    position: relative;
+    padding-top: 70%;
+}
+
+.arrival-slider .home-inventory-cards .inventory-card-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.boat-condition-list {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+.specs-list-item {
+    list-style: none;
+    position: relative;
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding-right: 20px;
+    white-space: nowrap;
+}
+
+.specs-list-item+.specs-list-item::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -10px;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 14px;
+    background: var(--gray-color);
+}
+
+.arrival-slider-sec-header {
+    margin-bottom: 40px;
+}
+
+.boat-title a {
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.inventory-card-price {
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.arrival-slider .owl-nav {
+    display: block !important;
+}
+
+.arrival-slider .owl-nav .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.arrival-slider .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.madis-container {
+    width: calc(100% - 19%);
+    margin: 0 auto;
+    display: flex;
+}
+
+.madis-col {
+    width: 50%;
+}
+
+.madis-col-img-box {
+    position: relative;
+    padding-top: 80%;
+}
+
+.madis-col-img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.madis-col-content {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.madis-col-content h3 {
+    color: var(--white-color);
+    font-family: "Bai Jamjuree";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.featured-inventory-sec {
+    padding-top: 80px;
+}
+
+.financing-sec {
+    display: flex;
+    max-width: 1400px;
+    margin: 80px auto 80px auto;
+    width: 100%;
+}
+
+.financing-col {
+    width: calc(100% / 3);
+    position: relative;
+    padding: 55px 47px;
+}
+
+.sm-financing-sec {
+    display: flex;
+    gap: 20px;
+}
+
+.financing-col-1 {
+    width: 50px;
+    height: 50px;
+    background: var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.financing-col-1 img {
+    object-fit: contain;
+}
+
+.financing-col-2 {
+    width: calc(100% - 50px);
+}
+
+.financing-col-2 h6 {
+    color: var(--black-color);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.financing-col-2 p {
+    margin-bottom: 0;
+
+}
+
+.financing-col-2 a {
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.financing-col+.financing-col::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 150px;
+    background: #EEE;
+}
+
+.home_services {
+    padding-bottom: 4px;
+}
+
+.lg-card-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.lg-card-col {
+    width: calc(100% / 4 - 4px);
+}
+
+.hm_serviceBox,
+.servc_img {
+    height: 100%;
+}
+
+.servc_img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hm_serviceBox,
+.servc_img {
+    height: 100%;
+    position: relative;
+}
+
+.hms_title {
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 50px;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    padding: 10px 20px;
+    color: var(--white-color);
+    font-family: "Bai Jamjuree";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.servc_img::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0.00) 0%, rgba(34, 34, 34, 0.80) 100%);
+    z-index: 0;
+}
+
+
+.doss-featured {
+    margin: 120px 0;
+}
+
+.doss-container {
+    width: calc(100% - 15%);
+    margin: 0 auto;
+}
+
+.doss-featured-box {
+    display: flex;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.doss-featured-col {
+    width: 50%;
+}
+
+.doss-featured-img {
+    width: 100%;
+    height: 100%;
+}
+
+.doss-featured-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doss-featured-col .content-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.fearured-rich-text {
+    margin: 40px 0;
+}
+
+.fearured-rich-text h6 {
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 13px;
+}
+
+@media (max-width: 1650px) {
+    .fearured-rich-text {
+        margin: 30px 0 40px 0;
+    }
+
+    .fearured-title {
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+
+    .doss-featured-col .content-box {
+        max-width: 600px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .madis-col-content h3 {
+        font-size: 30px;
+        letter-spacing: 5.4px;
+        margin-bottom: 30px;
+    }
+
+    .madis-container {
+        width: calc(100% - 12%);
+    }
+
+    .madis-col-content {
+        bottom: 50px;
+    }
+
+    .hms_title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .hms_title {
+        font-size: 23px;
+        line-height: 26px;
+    }
+
+    .financing-col-2 h6 {
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .financing-sec {
+        margin: 75px auto 60px auto;
+        max-width: 1200px;
+    }
+
+    .financing-col {
+        width: calc(100% / 3);
+        position: relative;
+        padding: 42px 47px;
+    }
+
+    .financing-col+.financing-col::after {
+        height: 134px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    .financing-col {
+        padding: 30px 47px;
+    }
+
+    .financing-col+.financing-col::after {
+        height: 119px;
+    }
+
+    .brand-sec {
+        padding: 50px 0;
+    }
+
+    .home-banner-btn {
+        bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .hms_title {
+        font-size: 20px;
+        letter-spacing: 2.5px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .financing-col-2 h6 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .madis-container {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .banner-title {
+        font-size: 35px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .doss-featured-img {
+        width: 100%;
+        height: 100%;
+    }
+    .doss-featured-col .content-box {
+        padding: 50px 20px;
+        max-width: 100%;
+        text-align: left;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .doss-featured-col {
+        width: 100%;
+    }
+
+    .doss-featured-img>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .doss-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .doss-featured-box {
+        margin-top: 80px !important;
+        margin-bottom: 50px !important;
+        flex-direction: column;
+    }
+
+    .lg-card-col {
+        width: calc(100% / 2 - 2px);
+        margin-bottom: 4px;
+    }
+
+    .financing-sec {
+        margin: 80px auto 80px auto;
+        max-width: 1000px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sm-financing-sec {
+        justify-content: center;
+        border-bottom: 1px solid rgba(52, 58, 64, 0.40);
+        padding: 27px;
+    }
+
+    .financing-col {
+        width: calc(100% / 1);
+        position: relative;
+        padding: 0 50px;
+    }
+
+    .madis-col-content {
+        bottom: 40px;
+    }
+
+    .madis-col {
+        width: 100%;
+    }
+
+    .madis-col-content h3 {
+        font-size: 24px;
+        letter-spacing: 4.8px;
+        margin-bottom: 24px;
+    }
+
+    .madis-container {
+        flex-direction: column;
+    }
+
+    .home-banner-btn {
+        bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .hm_serviceBox,
+    .servc_img {
+        min-height: 300px;
+    }
+
+    .brand-items a img {
+        max-width: 135px;
+    }
+
+    .brand-items {
+        width: 200px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .lg-card-col {
+        width: 100%;
+    }
+
+    .hms_title {
+        bottom: 60px;
+        color: var(--white-color);
+        font-family: "Bai Jamjuree";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+    }
+
+    .financing-col {
+        width: calc(100% / 1);
+        position: relative;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hms_title {
+        bottom: 30px;
+        font-size: 25px;
+        line-height: 34px;
+    }
+
+    .brand-sec {
+        padding: 40px 0;
+    }
+
+    .brand-items a img {
+        max-width: 125px;
+    }
+
+    .brand-items {
+        width: 150px;
+        height: 62px;
+    }
 }

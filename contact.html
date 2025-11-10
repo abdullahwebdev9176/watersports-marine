@@ -280,62 +280,86 @@
         <div class="col-lg-6">
             <div class="cntctdetails">
                 <h1 class="">CONTACT SPORTS MARINE</h4>
-                <p class="">Our friendly team in Newport News is here to help.</p>
+                    <p class="">Our friendly team in Newport News is here to help.</p>
             </div>
         </div>
-        <div class="contact-form-box p-5 w-100">
-            <h2 class="text-uppercase font-weight-bold text-center mb-4">Get In Touch</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="First Name">
+        <div class="contact-form-box form-sec w-100">
+            <div class="form-box">
+                <h2 class="form-title-heading mb-lg-3 mb-2">Get In Touch</h2>
+                <div id="service-form">
+                    <div class="form-row gap-0">
+                        <div class="form-group w-100" >
+                            <label for="first_name" class="sr-only">First Name</label>
+                            <input type="text" name="first_name" id="first_name" placeholder="First Name *"
+                                class="custom-form-control require_check">
+                            <input type="hidden" id="honeypot">
+                            <div class="field-error" id="error_first_name"></div>
+                        </div>
+
+                        <div class="form-group w-100">
+                            <label for="last_name" class="sr-only">Last Name</label>
+                            <input type="text" name="last_name" id="last_name" placeholder="Last Name *"
+                                class="custom-form-control require_check">
+                            <div class="field-error" id="error_last_name"></div>
+                        </div>
+                        <div class="form-group w-100">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email *"
+                                class="custom-form-control require_check">
+                            <div class="field-error" id="error_email"></div>
+                        </div>
+    
+                        <div class="form-group w-100">
+                            <label for="email" class="sr-only">Phone</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Phone *"
+                                class="custom-form-control require_check">
+                            <div class="field-error" id="error_email"></div>
+                        </div>
+    
+                        <div class="form-group w-100">
+                            <label for="email" class="sr-only">Message</label>
+                            <textarea class="custom-form-control" name="message" id="Message" placeholder="Message"></textarea>
+                            <div class="field-error" id="error_email"></div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-lg-3 mt-2">
+                        <button class="theme-filled-btn">Send</button>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Last Name">
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Phone">
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" rows="3" placeholder="Message"></textarea>
-                </div>
-                <div class="text-center">
-                    <button type="submit" class="btn theme-filled-btn text-white font-weight-bold mt-2">SEND</button>
-                </div>
-            </form>
+            </div>
         </div>
 
     </section>
 
 
-<section class="contact-info text-center py-5 ">
-    <div class="row m-0 justify-content-center">
-      <div class="col-md-4 mb-4">
-        <div class="info-box">
-            <img class="pb-3" src="/assets/images/about/location.png" alt="location">
-          <p class="font-weight-bold mb-1">1071 J. Clyde Morris Blvd. <br class="d-lg-block d-none">Newport News, Virginia, 23602</p>
-        </div>
-      </div>
+    <section class="contact-info text-center py-5 ">
+        <div class="row m-0 justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="info-box">
+                    <img class="pb-3" src="/assets/images/about/location.png" alt="location">
+                    <p class="font-weight-bold mb-1">1071 J. Clyde Morris Blvd. <br class="d-lg-block d-none">Newport
+                        News, Virginia, 23602</p>
+                </div>
+            </div>
 
-      <div class="col-md-4 mb-4">
-        <div class="info-box">
-            <img class="pb-3" src="/assets/images/about/call.png" alt="call">
-          <h5 class="font-weight-bold mb-0">757.516.4861</h5>
-        </div>
-      </div>
+            <div class="col-md-4 mb-4">
+                <div class="info-box">
+                    <img class="pb-3" src="/assets/images/about/call.png" alt="call">
+                    <h5 class="font-weight-bold mb-0">757.516.4861</h5>
+                </div>
+            </div>
 
-      <div class="col-md-4 mb-4">
-        <div class="info-box">
-            <img class="pb-3" src="/assets/images/about/time.png" alt="time">
-          <p class="mb-1 font-weight-bold text-uppercase">Mon - Fri 8:00 AM - 5:00 PM</p>
-          <p class="mb-1 font-weight-bold text-uppercase">Sat 9:00 AM - 12:00 PM</p>
-          <p class="font-weight-bold text-uppercase">Sun Closed</p>
+            <div class="col-md-4 mb-4">
+                <div class="info-box">
+                    <img class="pb-3" src="/assets/images/about/time.png" alt="time">
+                    <p class="mb-1 font-weight-bold text-uppercase">Mon - Fri 8:00 AM - 5:00 PM</p>
+                    <p class="mb-1 font-weight-bold text-uppercase">Sat 9:00 AM - 12:00 PM</p>
+                    <p class="font-weight-bold text-uppercase">Sun Closed</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-</section>
+    </section>
 
 
 

@@ -2059,16 +2059,11 @@ footer {
     position: absolute;
     right: 11%;
     top: 20%;
+    padding: 24px;
 }
 
-.contact-form-box h2 {
-    font-family: "Bai Jamjuree";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 1.6px;
-    text-transform: uppercase;
+.contact-form-box .form-box .form-row {
+    gap: 0;
 }
 
 .contact-form-box button {

@@ -663,7 +663,8 @@ ul {
     padding: 64px 0 120px 0;
     position: relative;
 }
-.scroll-down{
+
+.scroll-down {
     position: absolute;
     top: -120px;
     left: 0;
@@ -2099,13 +2100,14 @@ footer {
     max-width: 80%;
     margin: 0 auto;
 }
-.contact-info .info-box p{
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700 !important;
-  line-height: 28px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+
+.contact-info .info-box p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .cntctdetails {
@@ -2224,9 +2226,94 @@ footer {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-  .contact-form-box .form-box .form-row {
+
+.contact-form-box .form-box .form-row {
     gap: 0;
-  }
+}
+
+/* area we serve page css start here */
+
+.central-subtitle {
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 24px 0;
+}
+
+.central-subtitle span {
+    color: var(--aqua-color);
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.events-title a {
+    display: block;
+    color: var(--black-color);
+    text-align: center;
+    font-family: "Bai Jamjuree";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.events-title a:hover {
+    color: var(--black-color);
+}
+
+.event-excerpt {
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.events-image {
+    position: relative;
+    padding-top: 60%;
+}
+
+.events-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.events-body {
+    padding: 16px;
+}
+
+.events-central-text {
+    padding-bottom: 64px;
+}
+
+.events-sec {
+    padding-bottom: 120px;
+}
 
 @media (max-width: 1650px) {
     .repower-container {
@@ -2277,13 +2364,15 @@ footer {
         font-size: 30px;
         line-height: 40px;
     }
-      .contact-form-box {
-    right: 8%;
-    top: 15%;
-  }
-  .contact-form-box {
-    max-width: 600px;
-  }
+
+    .contact-form-box {
+        right: 8%;
+        top: 15%;
+    }
+
+    .contact-form-box {
+        max-width: 600px;
+    }
 }
 
 @media (max-width: 1500px) {
@@ -2342,15 +2431,27 @@ footer {
     .financing-col+.financing-col::after {
         height: 134px;
     }
-      .cntctdetails h1 {
-    font-size: 35px;
-  }
-  .cntctdetails p {
-    font-size: 16px;
-  }
+
+    .cntctdetails h1 {
+        font-size: 35px;
+    }
+
+    .cntctdetails p {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 1440px) {
+    .title-heading {
+        font-size: 35px;
+        line-height: 40px;
+        letter-spacing: 2px;
+    }
+
+    .events-sec {
+        padding-bottom: 80px;
+    }
+
     .dark-img-logo {
         max-width: 300px;
     }
@@ -2379,28 +2480,33 @@ footer {
     .home-banner-btn {
         bottom: 80px;
     }
-      .custom-form-control {
-    padding: 12px;
-  }
-  .contact-form-box {
-    max-width: 550px;
-  }
-  .cntctdetails {
-    text-align: center;
-    padding: 30px 0;
-  }
-  .contact-form-box {
-    right: 7%;
-    top: 15%;
-    padding: 10px;
-    max-width: 500px;
-  }
-  .contact-info .info-box p {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700 !important;
-    line-height: normal;
-  }
+
+    .custom-form-control {
+        padding: 12px;
+    }
+
+    .contact-form-box {
+        max-width: 550px;
+    }
+
+    .cntctdetails {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .contact-form-box {
+        right: 7%;
+        top: 15%;
+        padding: 10px;
+        max-width: 500px;
+    }
+
+    .contact-info .info-box p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700 !important;
+        line-height: normal;
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -2480,28 +2586,33 @@ footer {
     .inventory-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-      .cntctdetails h1 {
-    font-size: 28px;
-    line-height: normal;
-  }
-  .cntctdetails p {
-    font-size: 12px;
-  }
-  .custom-form-control {
-    padding: 8px 12px;
-  }
-  .contact-form-box .form-title-heading {
-    font-size: 25px;
-    font-style: normal;
-  }
+
+    .cntctdetails h1 {
+        font-size: 28px;
+        line-height: normal;
+    }
+
+    .cntctdetails p {
+        font-size: 12px;
+    }
+
+    .custom-form-control {
+        padding: 8px 12px;
+    }
+
+    .contact-form-box .form-title-heading {
+        font-size: 25px;
+        font-style: normal;
+    }
 }
 
 @media screen and (max-width: 1100px) {
-  .cntctdetails {
-    text-align: left;
-    padding: 50px 0;
-  }
+    .cntctdetails {
+        text-align: left;
+        padding: 50px 0;
+    }
 }
+
 @media screen and (max-width: 991px) {
 
     .repower-item {
@@ -2789,29 +2900,49 @@ footer {
         width: 90%;
         margin: 0 auto;
     }
-      .contact-form-box {
-    right: 7%;
-    top: 15%;
-    padding: 20px;
-    max-width: 60%;
-    position: unset;
-    margin: 0 auto;
-    border: none;
-    box-shadow: 0px 0px 15px #00000036;
-  }
-  .cntctdetails {
-    text-align: center;
-    padding: 30px 0;
-  }
-  .cntctdetails h1 {
-    font-size: 30px;
-  }
-  .contact-form-box .form-title-heading {
-    font-size: 22px;
-  }
+
+    .contact-form-box {
+        right: 7%;
+        top: 15%;
+        padding: 20px;
+        max-width: 60%;
+        position: unset;
+        margin: 0 auto;
+        border: none;
+        box-shadow: 0px 0px 15px #00000036;
+    }
+
+    .cntctdetails {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .cntctdetails h1 {
+        font-size: 30px;
+    }
+
+    .contact-form-box .form-title-heading {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 767px) {
+    .events-sec {
+        padding-bottom: 40px;
+    }
+
+    .title-heading {
+        font-size: 28px;
+        line-height: 30px;
+        letter-spacing: 1.5px;
+    }
+
+    .central-subtitle {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        margin: 18px 0;
+    }
 
     .repower-item {
         width: calc(100% / 2);
@@ -2883,16 +3014,18 @@ footer {
     .form-textarea {
         flex: none;
     }
-      .contact-form-box {
-    padding: 20px;
-    max-width: 100%;
-    border: none;
-    box-shadow: none;
-    background: none;
-  }
-  .contact-info .info-box p {
-    font-size: 16px;
-  }
+
+    .contact-form-box {
+        padding: 20px;
+        max-width: 100%;
+        border: none;
+        box-shadow: none;
+        background: none;
+    }
+
+    .contact-info .info-box p {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -2982,15 +3115,18 @@ footer {
     .testimonial .testimonial-box {
         flex-wrap: wrap;
     }
-      .contact-form-box {
-    padding: 0px;
-  }
-  .custom-form-control:placeholder-shown {
-    font-size: 14px;
-  }
-  .contact-info .info-box p {
-    font-size: 14px;
-  }
+
+    .contact-form-box {
+        padding: 0px;
+    }
+
+    .custom-form-control:placeholder-shown {
+        font-size: 14px;
+    }
+
+    .contact-info .info-box p {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -3030,6 +3166,14 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
+    .btn-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .events-body {
+        padding: 16px 0 !important;
+    }
+
     .footer-bottom ul {
         flex-direction: column;
         padding: 15px 0 20px 0;

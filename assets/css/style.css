@@ -2098,6 +2098,8 @@ footer {
 .contact-info {
     max-width: 80%;
     margin: 0 auto;
+}
+.contact-info .info-box p{
   font-size: 16px;
   font-style: normal;
   font-weight: 700 !important;

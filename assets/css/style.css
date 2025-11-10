@@ -724,9 +724,6 @@ ul {
     font-weight: 700;
     line-height: 24px;
 }
-.form-header{
-    
-}
 
 .form-title-heading {
     text-align: center;
@@ -3097,6 +3094,23 @@ footer {
     .checkservices {
         padding: 20px 0 !important;
     }
+    .type-temp h2 {
+    font-size: 18px;
+    line-height: normal;
+}
+    .type-temp h1 {
+    font-size: 38px;
+    line-height: normal;
+}
+    .doss-featured-col .content-box {
+        margin: 0 10px;
+    }
+    .why-choose-us {
+    padding: 20px 0;
+}
+.why-choose-us ul li {
+    padding-bottom: 10px;
+}
 }
 
 @media screen and (max-width: 576px) {
@@ -3204,6 +3218,17 @@ footer {
     .content-box {
     padding: 10px !important;
     }
+    .map-container iframe{
+        height: 350px;
+    }
+    .type-temp h1 {
+    font-size: 26px;
+    line-height: normal;
+}
+.type-temp h2 {
+    font-size: 16px;
+    line-height: normal;
+}
 }
 
 @media screen and (max-width: 500px) {

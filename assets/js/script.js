@@ -22,6 +22,23 @@ $(".close-mega-menu").click(function () {
     $(this).closest('.mega-menu-wrapper').find('.show-mega-menu').removeClass('show-mega-menu');
 })
 
+$(document).ready(function () {
+    $('.custom-toggle-icon').click(function () {
+        $(this).closest(".mobile-header").next(".mobile-header-list").toggleClass("mobile-menu-show");
+    });
+
+    $('.custom-close-icon').click(function () {
+        $(this).closest(".mobile-header-list").removeClass("mobile-menu-show");
+    });
+});
+
+$('.toggle-mobile-menu').on('click', function(){
+    var menuTitle = $(this).attr("data-title");
+    var menuId = "#" + menuTitle;
+
+    $(menuId).addClass('show-mobile-menu')
+})
+
 $('.footer-accordion-header').click(function () {
     $(this).toggleClass('active');
     $(this).next('.footer-accordion-content').slideToggle(200);

@@ -769,20 +769,94 @@ ul {
 
 .mobile-header-list {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 90px;
-    left: 0;
-    z-index: 200;
+    right: -991px;
+    z-index: 999;
     width: 100%;
-    background: white;
+    background: var(--white-color);
+    transition: all 0.2s;
 }
 
 .mobile-header-list.mobile-menu-show {
     display: none !important;
+    right: 0;
 }
 
 .mobile-header-list ul {
     padding: 0;
+}
+
+.mds-nav-tab {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0 35px 35px;
+    padding: 0 30px;
+    column-gap: 10px;
+}
+
+.nav-btn {
+    color: #222;
+    text-align: center;
+    font-family: 'acumin-Medium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    display: inline-block;
+    padding: 14px 25px 14px 23px !important;
+    border: 1px solid rgba(34, 34, 34, 0.10);
+    background: rgba(34, 34, 34, 0.10);
+    width: 110px;
+    height: 45px;
+    list-style: none;
+}
+
+.sub-header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sub-header-box span {
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.nav-btn.active {
+    background: #222;
+    color: #FFF;
+    border: 1px solid #222;
+}
+
+.mobile-nav-box {
+    position: absolute;
+    top: 91px;
+    right: -991px;
+    height: 100%;
+    background: red;
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.mobile-nav-box.show-mobile-menu {
+    right: 0;
+    display: block;
+    
+}
+
+.mobile-nav-box ul {
+    padding-left: 56px;
+}
+
+.mobile-nav-box ul li {
+    list-style: none;
+}
+
+.dropdown-header {
+    padding-left: 56px;
+    padding-right: 56px;
 }
 
 .mobile-header-parent {
@@ -792,13 +866,19 @@ ul {
     padding: 8px 25px;
     width: 100%;
     height: 90px;
-    background: var(--black-color);
+    background: var(--white-color);
     z-index: 500;
 }
 
 .mobile-header-img {
     max-height: 90px;
     height: 100%;
+    max-width: 243px;
+}
+
+.sub-header {
+    background: #FFF;
+    height: 60px;
 }
 
 .mobile-header-img img {
@@ -807,10 +887,41 @@ ul {
     object-fit: contain;
 }
 
+.sub-header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.sub-header ul li {
+    list-style: none;
+}
+
+.sub-header ul li a {
+    padding: 22px 33px;
+    display: inline-block;
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.sub-header ul li a span.fa {
+    padding-right: 10px;
+}
+
+.header-bg {
+    border-bottom: 1px solid #EEE;
+    background: #FFF;
+}
+
 .custom-toggle-icon span.fa {
     font-size: 30px;
-    background-color: #241c1c;
-    color: white;
+    color: var(--black-color);
 }
 
 .custom-nav-link {
@@ -832,19 +943,31 @@ ul {
 
 .mobile-header-list ul li {
     list-style: none;
-    border-bottom: 2px solid lightgray;
+    padding: 0 30px;
+}
+.drodown-box{
+    overflow: hidden;
+}
+.submenu-nav-link {
+    display: block;
+    padding: 15px 0;
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
-.submenu-nav-link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 45px;
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-family: "Oswald-SemiBold";
+.dropdown-menu-link {
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .content-menu.mobile-menu-show {
@@ -2327,52 +2450,62 @@ footer {
 
 /* ----------------------------seasonal services ----------------------------- */
 .Winterization-Services .doss-featured-col {
-  background-color: black;
-  color: #fff;
+    background-color: black;
+    color: #fff;
 }
+
 .Winterization-Services .doss-featured-col .content-box h3 {
-  color: #009899 !important;
+    color: #009899 !important;
 }
+
 .Winterization-Services .doss-featured-col .content-box h4 {
-  font-family: "Bai Jamjuree";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  padding: 15px 0;
-  margin: 0;
-  color: #fff;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
+    font-family: "Bai Jamjuree";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 15px 0;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
 }
+
 .Winterization-Services-list {
-  padding: 20px 0;
+    padding: 20px 0;
 }
+
 .Winterization-Services-list strong {
-  padding: 10px;
+    padding: 10px;
 }
+
 .checkservices {
-  background-color: #fff;
-  color: #000;
-  text-align: center;
-  padding: 60px 0;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 60px 0;
 }
+
 .checkservices .fearured-title {
-  color: #000;
-  text-align: center;
+    color: #000;
+    text-align: center;
 }
+
 .checkservices .checkservices-list .checkservices-content {
-  padding: 40px 0;
+    padding: 40px 0;
 }
+
 .Winterization-Services .doss-featured-col {
-  background: #009899;
-  color: #fff;
+    background: #009899;
+    color: #fff;
 }
+
 .Winterization-Services .doss-featured-col .content-box .fearured-title {
-  color: #fff !important;
+    color: #fff !important;
 }
-.Winterization-Services .doss-featured-col .content-box .theme-btn{
-  color: #fff !important;
-  border: 1px solid #fff;
+
+.Winterization-Services .doss-featured-col .content-box .theme-btn {
+    color: #fff !important;
+    border: 1px solid #fff;
 }
 
 /* ----------------------------seasonal services ----------------------------- */
@@ -2676,6 +2809,10 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+    .mobile-header-list.mobile-menu-show {
+        display: block !important;
+        right: 0;
+    }
 
     .repower-item {
         width: calc(100% / 3);
@@ -2804,7 +2941,7 @@ footer {
 
     .menu-logo-box {
         display: flex;
-        padding: 40px 30px;
+        padding: 40px 38px;
         flex-wrap: wrap;
         gap: 10px;
     }
@@ -3088,29 +3225,36 @@ footer {
     .contact-info .info-box p {
         font-size: 16px;
     }
+
     .checkservices .checkservices-list .checkservices-content {
         padding: 10px 0 !important;
     }
+
     .checkservices {
         padding: 20px 0 !important;
     }
+
     .type-temp h2 {
-    font-size: 18px;
-    line-height: normal;
-}
+        font-size: 18px;
+        line-height: normal;
+    }
+
     .type-temp h1 {
-    font-size: 38px;
-    line-height: normal;
-}
+        font-size: 38px;
+        line-height: normal;
+    }
+
     .doss-featured-col .content-box {
         margin: 0 10px;
     }
+
     .why-choose-us {
-    padding: 20px 0;
-}
-.why-choose-us ul li {
-    padding-bottom: 10px;
-}
+        padding: 20px 0;
+    }
+
+    .why-choose-us ul li {
+        padding-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -3212,23 +3356,28 @@ footer {
     .contact-info .info-box p {
         font-size: 14px;
     }
+
     .theme-btn {
         padding: 12px !important;
     }
+
     .content-box {
-    padding: 10px !important;
+        padding: 10px !important;
     }
-    .map-container iframe{
+
+    .map-container iframe {
         height: 350px;
     }
+
     .type-temp h1 {
-    font-size: 26px;
-    line-height: normal;
-}
-.type-temp h2 {
-    font-size: 16px;
-    line-height: normal;
-}
+        font-size: 26px;
+        line-height: normal;
+    }
+
+    .type-temp h2 {
+        font-size: 16px;
+        line-height: normal;
+    }
 }
 
 @media screen and (max-width: 500px) {

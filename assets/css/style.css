@@ -12,6 +12,7 @@
     --aqua-color: #009899;
     --white-color: #FFF;
     --gray-color: #D9D9D9;
+    --lightest-gray-color: #FAFAFA;
 }
 
 /* Common css start here  */
@@ -655,6 +656,90 @@ ul {
     display: block !important;
 }
 
+/* form css start here */
+
+.form-sec{
+    background: var(--lightest-gray-color);
+    padding: 64px 0 120px 0;
+}
+.custom-form-control:placeholder-shown {
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.custom-form-control {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--black-color);
+    opacity: 0.6;
+    border: 1px solid var(--gray-color);
+    background: var(--white-color);
+}
+
+.custom-form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--gray-color);
+}
+.custom-textarea{
+    display: block;
+    width: 100%;
+    padding: 16px;
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--black-color);
+    opacity: 0.6;
+    border: 1px solid var(--gray-color);
+    background: var(--white-color);
+}
+.form-subtitle {
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.form-title-heading {
+    text-align: center;
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.form-box {
+    max-width: 686px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.form-box .form-group {
+    width: calc(50% - 8px);
+}
+
+.form-box .form-row {
+    gap: 16px;
+}
+
 
 /* mobile header start here */
 
@@ -1042,6 +1127,7 @@ footer {
 .footer-bottom {
     padding-bottom: 15px;
 }
+
 .locations {
     text-align: center;
 }
@@ -1050,7 +1136,7 @@ footer {
     padding: 10px 0 !important;
 }
 
-.last-accordion{
+.last-accordion {
     border-bottom: 1px solid var(--gray-color);
 }
 

@@ -120,7 +120,7 @@
 .service-accordion-tabs {
     flex-basis: 35%;
     padding: 40px 45px 40px 45px;
-    border: 1px solid var(--black-color);
+    border: 2px solid var(--black-color);
 }
 
 .service-accordion-content {

@@ -658,10 +658,11 @@ ul {
 
 /* form css start here */
 
-.form-sec{
+.form-sec {
     background: var(--lightest-gray-color);
     padding: 64px 0 120px 0;
 }
+
 .custom-form-control:placeholder-shown {
     color: var(--black-color);
     font-family: "Bai Jamjuree";
@@ -691,7 +692,8 @@ ul {
     box-shadow: none;
     border: 1px solid var(--gray-color);
 }
-.custom-textarea{
+
+.custom-textarea {
     display: block;
     width: 100%;
     padding: 16px;
@@ -705,6 +707,7 @@ ul {
     border: 1px solid var(--gray-color);
     background: var(--white-color);
 }
+
 .form-subtitle {
     color: var(--black-color);
     font-family: "Bai Jamjuree";
@@ -1615,6 +1618,12 @@ footer {
 }
 
 @media (max-width: 1500px) {
+    .banner-title {
+        font-size: 35px;
+        line-height: 41px;
+        letter-spacing: 2px;
+    }
+
     .hms_title {
         font-size: 23px;
         line-height: 26px;

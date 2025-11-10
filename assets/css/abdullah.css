@@ -1,5 +1,21 @@
-
-
+.sports-marine-dropdown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    background: var(--white-color);
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.sports-marine-dropdown ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
 @media screen and (max-width: 1600px) {}
 
 @media screen and (max-width: 1500px) {}

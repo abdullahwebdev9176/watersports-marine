@@ -25,10 +25,9 @@
 <body>
 
 
-    <section class="About-banner">
-        <div>
-            <img src="./assets/images/about/about-banner.png" class="w-100" alt="about-banner">
-        </div>
+    <section class="about-banner">
+        
+            <img src="./assets/images/about/about-banner.png" class="w-100 banner-img" alt="about-banner">
 
         <div class="banner-content">
             <h1 class="banner-title">Full-Service Boat Repair <br>& Maintenance Center</h1>
@@ -39,7 +38,7 @@
 
     </section>
 
-    <secton class="doss-featured">
+    <secton class="doss-featured mb-4 mb-lg-0">
         <div class="doss-container">
             <div class="doss-featured-box">
 
@@ -63,7 +62,7 @@
                     </div>
                 </div>
 
-                <div class="doss-featured-col">
+                <div class="doss-featured-col mb-4 mb-lg-0">
                     <div class="doss-featured-img fixed-height-img">
                         <img src="./assets/images/service/service-img-1.jpg" alt="about-feature">
                     </div>
@@ -74,10 +73,10 @@
     </secton>
 
 
-    <div class="dark-sec">
+    <div class="dark-sec reverse-col">
         <div class="dark-col">
             <div class="dark-sec-img">
-                <img src="./assets/images/service/service-img-2.png" alt="">
+                <img src="./assets/images/service/service-img-2.png" alt="" class="dark-sec-main-img">
 
                 <div class="dark-img-logo">
                     <img src="./assets/images/service/service-img-3.png" alt="">
@@ -225,6 +224,10 @@
                 </svg>
             </div>
 
+            <div class="text-center text-lg-right mt-4">
+                <a href="" class="theme-btn">Request Service</a>
+            </div>
+
 
         </div>
 
@@ -345,7 +348,7 @@
             <h2 class="form-title-heading mb-4 mb-md-5">Request Service</h2>
             <div id="service-form">
                 <div class="form-row">
-                    <div class="form-group">
+                    <div class="form-group form-col">
                         <label for="first_name" class="sr-only">First Name</label>
                         <input type="text" name="first_name" id="first_name" placeholder="First Name *"
                             class="custom-form-control require_check">
@@ -353,7 +356,7 @@
                         <div class="field-error" id="error_first_name"></div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group form-col">
                         <label for="last_name" class="sr-only">Last Name</label>
                         <input type="text" name="last_name" id="last_name" placeholder="Last Name *"
                             class="custom-form-control require_check">
@@ -362,14 +365,14 @@
                 </div>
 
                 <div class="form-row">
-                    <div class="form-group">
+                    <div class="form-group form-col">
                         <label for="email" class="sr-only">Email</label>
                         <input type="email" name="email" id="email" placeholder="Email *"
                             class="custom-form-control require_check">
                         <div class="field-error" id="error_email"></div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group form-col">
                         <label for="email" class="sr-only">Phone</label>
                         <input type="tel" name="phone" id="phone" placeholder="Phone *"
                             class="custom-form-control require_check">
@@ -380,14 +383,14 @@
                 <h6 class="form-subtitle mt-3">Boat Info</h6>
 
                 <div class="form-row">
-                    <div class="form-group">
+                    <div class="form-group form-col">
                         <label for="email" class="sr-only">Email</label>
                         <input type="email" name="email" id="email" placeholder="Email *"
                             class="custom-form-control require_check">
                         <div class="field-error" id="error_email"></div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group form-col">
                         <label for="email" class="sr-only">Phone</label>
                         <input type="tel" name="phone" id="phone" placeholder="Phone *"
                             class="custom-form-control require_check">
@@ -396,7 +399,7 @@
                 </div>
 
                 <div class="form-row">
-                    <div class="form-group">
+                    <div class="form-group form-col">
                         <label for="model" class="sr-only">Model</label>
                         <input type="model" name="model" id="model" placeholder="model *"
                             class="custom-form-control require_check">

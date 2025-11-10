@@ -724,6 +724,9 @@ ul {
     font-weight: 700;
     line-height: 24px;
 }
+.form-header{
+    
+}
 
 .form-title-heading {
     text-align: center;
@@ -735,6 +738,16 @@ ul {
     line-height: 40px;
     letter-spacing: 1.6px;
     text-transform: uppercase;
+}
+
+.form-description {
+    text-align: center;
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .form-box {

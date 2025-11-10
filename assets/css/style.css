@@ -3091,6 +3091,12 @@ footer {
     .contact-info .info-box p {
         font-size: 16px;
     }
+    .checkservices .checkservices-list .checkservices-content {
+        padding: 10px 0 !important;
+    }
+    .checkservices {
+        padding: 20px 0 !important;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -3191,6 +3197,12 @@ footer {
 
     .contact-info .info-box p {
         font-size: 14px;
+    }
+    .theme-btn {
+        padding: 12px !important;
+    }
+    .content-box {
+    padding: 10px !important;
     }
 }
 

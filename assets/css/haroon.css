@@ -1,31 +1,70 @@
+.Winterization-Services .doss-featured-col {
+  background-color: black;
+  color: #fff;
+}
+.Winterization-Services .doss-featured-col .content-box h3 {
+  color: #009899 !important;
+}
+.Winterization-Services .doss-featured-col .content-box h4 {
+  font-family: "Bai Jamjuree";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 15px 0;
+  margin: 0;
+  color: #fff;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.Winterization-Services-list {
+  padding: 20px 0;
+}
+.Winterization-Services-list strong {
+  padding: 10px;
+}
+.checkservices {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 60px 0;
+}
+.checkservices .fearured-title {
+  color: #000;
+  text-align: center;
+}
+.checkservices .checkservices-list .checkservices-content {
+  padding: 40px 0;
+}
+.Winterization-Services .doss-featured-col {
+  background: #009899;
+  color: #fff;
+}
+.Winterization-Services .doss-featured-col .content-box .fearured-title {
+  color: #fff !important;
+}
+.Winterization-Services .doss-featured-col .content-box .theme-btn{
+  color: #fff !important;
+  border: 1px solid #fff;
+}
 
 @media screen and (max-width: 1700px) {
-
 }
 @media screen and (max-width: 1600px) {
-
 }
 @media screen and (max-width: 1500px) {
-
 }
 @media screen and (max-width: 1400px) {
-
 }
 @media screen and (max-width: 1300px) {
 }
 @media screen and (max-width: 1200px) {
-
 }
 @media screen and (max-width: 1100px) {
-
 }
 @media screen and (max-width: 991px) {
-
 }
 @media screen and (max-width: 768px) {
-
 }
 
 @media screen and (max-width: 576px) {
-
 }

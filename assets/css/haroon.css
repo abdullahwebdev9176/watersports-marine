@@ -1,60 +1,22 @@
 
 @media screen and (max-width: 1700px) {
-.contact-form-box .form-box .form-row {
-    gap: 0;
-}
+
 }
 @media screen and (max-width: 1600px) {
-.contact-form-box {
-    right: 8%;
-  top: 15%;
-}
-.contact-form-box {
-    max-width: 600px;
-}
+
 }
 @media screen and (max-width: 1500px) {
-.cntctdetails h1 {
-    font-size: 35px;
-}
-.cntctdetails p {
-    font-size: 16px;
-}
+
 }
 @media screen and (max-width: 1400px) {
-.custom-form-control {
-    padding: 12px;
-}
-.contact-form-box {
-    max-width: 550px;
-}
-.cntctdetails {
-    text-align: left;
-    padding: 30px 0;
-}
-.contact-form-box {
-    right: 7%;
-    top: 15%;
-    padding: 10px;
-    max-width: 500px;
-}
+
 }
 @media screen and (max-width: 1300px) {
-
 }
 @media screen and (max-width: 1200px) {
-    .cntctdetails h1 {
-        font-size: 28px;
-        line-height: normal;
-    }
-        .cntctdetails p {
-        font-size: 12px;
-    }
-}
-@media screen and (max-width: 1100px) {
 
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
 
 }
 @media screen and (max-width: 991px) {
@@ -64,3 +26,6 @@
 
 }
 
+@media screen and (max-width: 576px) {
+
+}

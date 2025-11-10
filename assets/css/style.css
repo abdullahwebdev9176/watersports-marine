@@ -2098,6 +2098,12 @@ footer {
 .contact-info {
     max-width: 80%;
     margin: 0 auto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .cntctdetails {
@@ -2216,7 +2222,9 @@ footer {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-
+  .contact-form-box .form-box .form-row {
+    gap: 0;
+  }
 
 @media (max-width: 1650px) {
     .repower-container {
@@ -2267,6 +2275,13 @@ footer {
         font-size: 30px;
         line-height: 40px;
     }
+      .contact-form-box {
+    right: 8%;
+    top: 15%;
+  }
+  .contact-form-box {
+    max-width: 600px;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -2325,6 +2340,12 @@ footer {
     .financing-col+.financing-col::after {
         height: 134px;
     }
+      .cntctdetails h1 {
+    font-size: 35px;
+  }
+  .cntctdetails p {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 1440px) {
@@ -2356,6 +2377,28 @@ footer {
     .home-banner-btn {
         bottom: 80px;
     }
+      .custom-form-control {
+    padding: 12px;
+  }
+  .contact-form-box {
+    max-width: 550px;
+  }
+  .cntctdetails {
+    text-align: center;
+    padding: 30px 0;
+  }
+  .contact-form-box {
+    right: 7%;
+    top: 15%;
+    padding: 10px;
+    max-width: 500px;
+  }
+  .contact-info .info-box p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: normal;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -2435,8 +2478,28 @@ footer {
     .inventory-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+      .cntctdetails h1 {
+    font-size: 28px;
+    line-height: normal;
+  }
+  .cntctdetails p {
+    font-size: 12px;
+  }
+  .custom-form-control {
+    padding: 8px 12px;
+  }
+  .contact-form-box .form-title-heading {
+    font-size: 25px;
+    font-style: normal;
+  }
 }
 
+@media screen and (max-width: 1100px) {
+  .cntctdetails {
+    text-align: left;
+    padding: 50px 0;
+  }
+}
 @media screen and (max-width: 991px) {
 
     .repower-item {
@@ -2724,6 +2787,26 @@ footer {
         width: 90%;
         margin: 0 auto;
     }
+      .contact-form-box {
+    right: 7%;
+    top: 15%;
+    padding: 20px;
+    max-width: 60%;
+    position: unset;
+    margin: 0 auto;
+    border: none;
+    box-shadow: 0px 0px 15px #00000036;
+  }
+  .cntctdetails {
+    text-align: center;
+    padding: 30px 0;
+  }
+  .cntctdetails h1 {
+    font-size: 30px;
+  }
+  .contact-form-box .form-title-heading {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2798,6 +2881,16 @@ footer {
     .form-textarea {
         flex: none;
     }
+      .contact-form-box {
+    padding: 20px;
+    max-width: 100%;
+    border: none;
+    box-shadow: none;
+    background: none;
+  }
+  .contact-info .info-box p {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -2887,6 +2980,15 @@ footer {
     .testimonial .testimonial-box {
         flex-wrap: wrap;
     }
+      .contact-form-box {
+    padding: 0px;
+  }
+  .custom-form-control:placeholder-shown {
+    font-size: 14px;
+  }
+  .contact-info .info-box p {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 500px) {

@@ -196,11 +196,14 @@ ul {
 }
 
 .title-heading {
-    font-family: "Zilla Slab";
+    color: var(--black-color);
+    font-family: "Bai Jamjuree";
     font-size: 48px;
-    font-style: normal;
-    font-weight: 300;
+    font-style: italic;
+    font-weight: 700;
     line-height: 56px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
 }
 
 .sm-title-heading {

@@ -835,9 +835,37 @@ ul {
     top: 91px;
     right: -991px;
     height: 100%;
-    background: red;
+    background: #c1ecff;
     width: 100%;
     transition: all 0.2s;
+}
+.mobile-nav-box ul li{
+    padding: 6px 0;
+}
+.mobile-nav-box .dropdown-header p{
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    color: #009899;
+}
+.mobile-nav-box .dropdown-header h6{
+    font-family: "Bai Jamjuree";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 20px 0px 0px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000 !important;
+}
+.mobile-nav-box .dropdown-menu-link{
+    font-family: "Bai Jamjuree";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .mobile-nav-box.show-mobile-menu {
@@ -2947,8 +2975,8 @@ footer {
     }
 
     .menu-logo {
-        width: 182px;
-        height: 56px;
+        width: 48%;
+        height: auto;
         padding: 15px 25px;
         border: 1px solid #d9d9d9;
         display: flex;
@@ -3307,8 +3335,8 @@ footer {
     }
 
     .menu-logo {
-        width: 150px;
-        height: 56px;
+        width: 48%;
+        height: auto;
     }
 
     .footer-bottom ul li a {
